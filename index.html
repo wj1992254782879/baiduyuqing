@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 优先使用ie最新版本和谷歌浏览器 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>  
+	<!-- 移动端 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage(2).css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fullpage.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<a href="javascript:;" class="header-logo">
+			</a>
+			<ul class="header-list">
+				<li>
+					<a href="javascript:;">
+						首页
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						产品介绍
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						用户版
+					</a>
+				</li>
+			</ul>
+			<div class="header-extra">
+				<a href="javascript:;">
+					手机客户端
+					<div></div>
+				</a>
+				<a href="javascript:;">
+					百度司南
+				</a>
+				<a href="javascript:;">
+					联系我们
+				</a>
+				<a href="javascript:;">
+					申请试用
+				</a>
+			</div>
+			<a href="javascript:;" class="nav-min">
+				<img src="images/mbx2.png" alt="">
+			</a>
+		</div>
+	</div>
+	<div class="stage">
+		<div class="wheel" id="fullpage">
+			<div class="stage-one section">
+				<span class="down-c">
+				</span>
+				<div class="one-middle">
+					<div class="cloud1"></div>
+					<!--<div class="cloud2"></div>-->
+					<!--<div class="cloud3"></div>-->
+					<div class="o-txt">
+					</div>
+					<div class="o-plane"></div>
+					<div class="o-login">
+						<form action="" class="login-form">
+							<div class="username">
+								<span></span>
+								<input type="text" placeholder="用户名">
+							</div>
+							<div class="password">
+								<span></span>
+								<input type="password" placeholder="密码">
+							</div>
+							<div class="yzm">
+								<input type="text" placeholder="验证码">
+								<img src="images/yzm.jpg" alt="">
+								<a href="javascript:;">
+									换一张
+								</a>
+							</div>
+							<a class="login-btn" href="javascript:;">
+								登录
+							</a>
+							<div class="ques">
+								<div class="fl">
+									<span href="javascript:;" >
+									</span>
+									<a href="javascript:;">
+										安全控件常见问题
+									</a>
+								</div>
+								<div class="fr">
+									<a href="javascript:;">
+										忘记密码
+									</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="one-btm">
+					<div class="center">
+						<div class="bg1"></div>
+						<div class="bg2"></div>
+						<div class="bg3"></div>
+						<div class="bg4"></div>
+						<a href="javascript:;" class="down">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="stage-two section">
+				<span class="down-c">
+				</span>
+				<div class="tree">
+				</div>
+				<div class="txt">
+					<span class="lingxian"></span>
+					<h4>
+						数据收集与处理
+					</h4>
+					<p>
+						15年专业数据收集与语义分析技术积累<br>
+						卓越极致，不断攀登
+					</p>
+				</div>
+				<div class="kuai1">
+				</div>
+				<div class="kuai2">
+				</div>
+				<div class="kuai3"></div>
+				<div class="kuai4"></div>
+				<div class="kuai5"></div>
+			</div>
+			<div class="stage-three section">
+				<span class="down-c">
+				</span>
+				<div class="tree2">
+				</div>
+				<div class="txt">
+					<span class="lingxian"></span>
+					<h4>
+						舆情分析逻辑与架构
+					</h4>
+					<p>
+						声量诊断、传播分析、情感提炼、受众画像<br>
+						有方法论、更有智慧
+					</p>
+				</div>
+			</div>
+			<div class="stage-four section">
+				<div class="tab">
+				</div>
+				<div class="copyright">
+					© 2014 Baidu 使用百度前必读
+				</div>
+				<div class="wenz">
+					<div class="wz-l">
+					</div>
+					<h4>
+					专业数据可视化	
+					</h4>
+					<p>
+						非凡的数据洞悉和可视化能力<br>精研数据，惊艳所见
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	<div class="btns">
+		<a href="javascript:;" class="current"></a>
+		<a href="javascript:;"></a>
+		<a href="javascript:;"></a>
+		<a href="javascript:;"></a>
+	</div> -->
+	<script>
+	$('#fullpage').fullpage({
+		'verticalCentered': false,
+		'css3': true,
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		'navigation': true,
+		'navigationPosition': 'right',
+//		'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
+		navigationTooltips: ['登录百度舆情', '领先：数据收集与处理','全面：舆情分析逻辑与架构', '专业：专业数据可视化'],
+
+	})
+
+	$(".down-c").click(function(){
+		$.fn.fullpage.moveSectionDown();
+	})
+	</script>
+</body>
+</html>
